@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import {map} from 'rxjs/operators'
+import {map} from 'rxjs/operators';
 import { from } from 'rxjs';
 
 @Injectable({
@@ -11,7 +11,7 @@ export class AuthService {
 
   constructor(private http: HttpClient) { }
 
-  login(model: any){
+  login(model: any) {
     return this.http.post(this.baseUrl + 'login', model)
     .pipe(
       map( (response: any) => {
