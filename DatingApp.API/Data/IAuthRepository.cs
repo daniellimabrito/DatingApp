@@ -1,5 +1,5 @@
 using System.Threading.Tasks;
-using DatingApp.API.Controllers.Models;
+using DatingApp.API.Models;
 
 namespace DatingApp.API.Data
 {
