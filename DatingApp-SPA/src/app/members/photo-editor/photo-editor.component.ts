@@ -55,6 +55,11 @@ export class PhotoEditorComponent implements OnInit {
           isMain: res.isMain
         };
         this.photos.push(photo);
+        if (photo.isMain === true) {
+          this.authService.changeMemberPhoto(photo.url);
+          this.authService.currentUser.photoUrl = photo.url;
+          localStorage.setItem('user', JSON.stringify(this.authService.currentUser));
+        }
       }
     };
 
@@ -79,9 +84,9 @@ export class PhotoEditorComponent implements OnInit {
         this.photos.splice(this.photos.findIndex(p => p.id === id), 1);
         this.alertify.success('Photo has been deleted');
       }, error => {
-        this.alertify.error('Failed to delete the photo')
-      })
-    })
+        this.alertify.error('Failed to delete the photo');
+      });
+    });
   }
 
 }
