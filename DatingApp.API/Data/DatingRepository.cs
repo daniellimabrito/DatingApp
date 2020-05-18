@@ -101,11 +101,11 @@ namespace DatingApp.API.Data
             var user = await _context.Users
                 .Include(x => x.Likers)
                 .Include(x => x.Likees)
-                .FirstOrDefaultAsync(y => y.Id == id);
+                .FirstOrDefaultAsync(u => u.Id == id);
 
                 if (likers)
                 {
-                    return user.Likers.Where(u => u.LikeeId == id).Select( id => id.LikerId);
+                    return user.Likers.Where(u => u.LikeeId == id).Select( i => i.LikerId);
                 }
                 else
                 {
