@@ -15,5 +15,6 @@ This project uses the following technologies :
   <li>CSS</li> 
   <li>Javascript</li> 
   <li>Angular 6</li> 
+  <li>Bootstrap</li>
 </ul>
 
