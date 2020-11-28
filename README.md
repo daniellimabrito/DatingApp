@@ -16,5 +16,6 @@ This project uses the following technologies :
   <li>Javascript</li> 
   <li>Angular 6</li> 
   <li>Bootstrap</li>
+  <li>Alertify</li>
 </ul>
 
