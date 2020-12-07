@@ -5,6 +5,7 @@ This project uses the following technologies :
 <ul>
   <li>.Net Core</li>
   <li>Entity Framework</li>
+  <li>MySQL</li>
   <li>C#</li> 
   <li>REST API</li>
 </ul> 
