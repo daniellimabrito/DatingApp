@@ -8,6 +8,7 @@ This project uses the following technologies :
   <li>MySQL</li>
   <li>C#</li> 
   <li>REST API</li>
+  <li>JWT</li>
 </ul> 
 <b>FrontEnd</b> 
 <ul>  
