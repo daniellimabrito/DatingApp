@@ -19,5 +19,6 @@ This project uses the following technologies :
   <li>Angular 6</li> 
   <li>Bootstrap</li>
   <li>Alertify</li>
+  <li>Cloudinary</li>
 </ul>
 
